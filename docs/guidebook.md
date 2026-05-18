@@ -129,13 +129,13 @@ source_path:
 
 # 자료 제목
 
-## What It Is
+## 자료 개요
 
-## Key Claims
+## 핵심 주장
 
-## Useful Excerpts
+## 유용한 내용
 
-## Related Pages
+## 관련 문서
 ```
 
 ### 4.3 개념 문서 만들기
@@ -200,7 +200,7 @@ wiki/sources에 자료별 요약 카드를 만들어줘.
 ```text
 LLMwiki에서 "MCP" 관련 문서를 찾아서
 wiki/synthesis/mcp-overview.md로 종합 정리해줘.
-출처는 Sources 섹션에 남기고 index에도 연결해줘.
+출처는 출처 섹션에 남기고 index에도 연결해줘.
 ```
 
 Codex는 `AGENTS.md`를 읽고 이 저장소의 규칙을 따를 수 있습니다. 그러므로 장기적으로는 “raw는 보존, wiki는 편집, log는 기록”이라는 운영 방식이 유지됩니다.
@@ -476,4 +476,3 @@ Permission to sumilee-pcu/LLMwiki.git denied
 - GitHub Actions 기반 링크 검사 추가
 
 초기에는 복잡한 자동화보다 작은 단위의 안정적인 운영이 더 중요합니다. 현재 구조는 원천 보존, 위키화, 검증, 커밋이라는 기본 사이클을 먼저 굳히는 데 초점을 둡니다.
-

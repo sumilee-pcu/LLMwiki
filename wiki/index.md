@@ -10,18 +10,18 @@ sources: []
 
 # LLMwiki Index
 
-## Entry Points
+## 시작점
 
 - [[Overview]]
+- [[Harness Engineering]]
 
-## Areas
+## 영역
 
 - `wiki/pages/`: 개념과 주제
 - `wiki/sources/`: 원천 자료 요약 카드
 - `wiki/synthesis/`: 여러 자료를 엮은 종합 문서
 
-## Maintenance
+## 운영
 
 - 변경 로그: [[Log]]
 - 점검 명령: `python3 tools/wiki_lint.py`
-
