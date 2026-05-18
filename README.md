@@ -44,6 +44,16 @@ npm start
 
 실행 후 `http://127.0.0.1:3100`에서 사용할 수 있습니다.
 
+## Vercel 공개 페이지
+
+Vercel에는 로컬 Ollama 실행기가 아니라 공개용 정적 가이드 페이지를 배포합니다. Vercel 서버에서는 내 Mac의 `127.0.0.1:11434` Ollama에 접근할 수 없기 때문입니다.
+
+```bash
+npm run build
+```
+
+빌드 결과는 `dist/`에 생성됩니다. Vercel 설정은 `vercel.json`에 들어 있으며, 루트 프로젝트 기준으로 `npm run build`를 실행하고 `dist`를 배포하도록 구성했습니다.
+
 Obsidian에서 열 때는 `/Users/sumilee/2026/LLMwiki` 폴더를 vault로 지정하면 됩니다.
 
 상세한 운영 방법, 기대 효과, 프로그램 위치는 [LLMwiki 상세 가이드북](docs/guidebook.md)을 참고하세요.

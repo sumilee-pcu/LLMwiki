@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LLMwiki</title>
+    <meta name="description" content="LLMwiki는 로컬 AI, 하네스 엔지니어링, 개인 지식 위키를 연결하는 한국어 기반 지식 저장소입니다.">
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="LLMwiki 홈">
+        <span class="brand-mark">LW</span>
+        <span>LLMwiki</span>
+      </a>
+      <nav aria-label="주요 섹션">
+        <a href="#workflow">운영 흐름</a>
+        <a href="#workbench">로컬 AI</a>
+        <a href="#harness">하네스</a>
+        <a href="#guide">가이드</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero-section">
+        <div class="hero-bg" aria-hidden="true">
+          <div class="node node-a"></div>
+          <div class="node node-b"></div>
+          <div class="node node-c"></div>
+          <div class="node node-d"></div>
+          <div class="path path-a"></div>
+          <div class="path path-b"></div>
+        </div>
+        <div class="hero-content">
+          <p class="eyebrow">LOCAL FIRST KNOWLEDGE HARNESS</p>
+          <h1>LLMwiki</h1>
+          <p class="hero-copy">
+            원천 자료, 위키 문서, 로컬 AI 작업실을 분리해 오래 가는 지식 작업 흐름을 만듭니다.
+            이 웹 페이지는 공개 가이드이고, 실제 모델 실행은 내 Mac의 Ollama와 Local AI Workbench에서 처리합니다.
+          </p>
+          <div class="hero-actions">
+            <a class="primary" href="https://github.com/sumilee-pcu/LLMwiki">GitHub 저장소</a>
+            <a class="secondary" href="#guide">사용 가이드 보기</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section band" id="workflow">
+        <div class="section-heading">
+          <p class="eyebrow">KNOWLEDGE FLOW</p>
+          <h2>원문과 해석을 분리하는 위키</h2>
+          <p>LLM에게 맡기는 일과 사람이 검증해야 할 일을 파일 구조로 나눕니다.</p>
+        </div>
+        <div class="flow-grid">
+          <article>
+            <span>01</span>
+            <h3>raw</h3>
+            <p>원천 자료, 캡처, 링크, PDF를 보존합니다. 요약 오류가 생겨도 되돌아갈 기준점입니다.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>wiki</h3>
+            <p>자료별 요약, 개념 문서, 종합 문서를 분리해 LLM이 읽기 쉬운 지식 구조로 바꿉니다.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>tools</h3>
+            <p>위키 링크와 필수 파일을 점검합니다. 현재는 `wiki_lint.py`로 기본 검증을 수행합니다.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>log</h3>
+            <p>중요한 판단, 변경 이력, 다음 작업을 남겨 다음 세션에서도 맥락을 이어갑니다.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split" id="workbench">
+        <div>
+          <p class="eyebrow">LOCAL AI WORKBENCH</p>
+          <h2>웹 공개용과 로컬 실행용을 분리합니다</h2>
+          <p>
+            Vercel은 공개 가이드와 문서 탐색에 적합하고, Ollama 모델 실행은 로컬 Mac에서 처리하는 편이 안전합니다.
+            Local AI Workbench는 LLMwiki, MCP 논문, GitHub 도구 조사 문맥을 선택적으로 모델에 전달합니다.
+          </p>
+        </div>
+        <div class="terminal-panel" aria-label="로컬 실행 명령">
+          <div class="terminal-top">
+            <span></span><span></span><span></span>
+          </div>
+          <pre><code>cd /Users/sumilee/2026/LLMwiki/apps/local-ai-workbench
+npm start
+
+http://127.0.0.1:3100</code></pre>
+        </div>
+      </section>
+
+      <section class="section band" id="models">
+        <div class="section-heading">
+          <p class="eyebrow">MODEL ROUTING</p>
+          <h2>작업별 로컬 모델 배치</h2>
+        </div>
+        <div class="model-table" role="table" aria-label="로컬 모델 권장 배치">
+          <div role="row">
+            <strong role="cell">gemma3:27b</strong>
+            <span role="cell">위키 정리, 긴 한국어 답변, 논문 리뷰의 주력 모델</span>
+          </div>
+          <div role="row">
+            <strong role="cell">gemma3n:e4b</strong>
+            <span role="cell">빠른 초안, 상태 확인, 짧은 요약</span>
+          </div>
+          <div role="row">
+            <strong role="cell">llama3.3:70b</strong>
+            <span role="cell">속도보다 추론 품질이 중요한 백업 모델</span>
+          </div>
+          <div role="row">
+            <strong role="cell">phi4:14b</strong>
+            <span role="cell">코드성 질의와 논리 비교 테스트</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section split reverse" id="harness">
+        <div class="diagram" aria-hidden="true">
+          <div class="diagram-core">AGENTS.md</div>
+          <div>raw</div>
+          <div>wiki</div>
+          <div>lint</div>
+          <div>log</div>
+        </div>
+        <div>
+          <p class="eyebrow">HARNESS ENGINEERING</p>
+          <h2>좋은 프롬프트보다 중요한 작업 환경</h2>
+          <p>
+            하네스 엔지니어링은 장시간 실행되는 AI 에이전트가 읽고, 판단하고, 검증하고, 이어받을 수 있는 환경을 설계하는 일입니다.
+            LLMwiki에서는 `AGENTS.md`, `wiki/log.md`, `tools/wiki_lint.py`, 원천과 해석의 분리가 그 역할을 맡습니다.
+          </p>
+        </div>
+      </section>
+
+      <section class="section band" id="guide">
+        <div class="section-heading">
+          <p class="eyebrow">GUIDEBOOK</p>
+          <h2>현재 저장소에 포함된 문서</h2>
+        </div>
+        <div class="link-grid">
+          <a href="https://github.com/sumilee-pcu/LLMwiki/blob/main/docs/guidebook.md">
+            <strong>상세 가이드북</strong>
+            <span>사용법, 효과, 프로그램 위치, 운영 루틴</span>
+          </a>
+          <a href="https://github.com/sumilee-pcu/LLMwiki/blob/main/wiki/pages/harness-engineering.md">
+            <strong>하네스 엔지니어링</strong>
+            <span>Codex와 장시간 에이전트를 위한 작업 환경 설계</span>
+          </a>
+          <a href="https://github.com/sumilee-pcu/LLMwiki/blob/main/wiki/pages/local-ai-workbench.md">
+            <strong>Local AI Workbench</strong>
+            <span>Ollama와 위키 문맥을 연결하는 로컬 앱</span>
+          </a>
+          <a href="https://github.com/sumilee-pcu/LLMwiki/blob/main/wiki/pages/useful-github-repositories.md">
+            <strong>유용한 GitHub 저장소</strong>
+            <span>법률 검색, 음성 에이전트, 화면 녹화, 3D 생성 도구</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>LLMwiki</span>
+      <span>한국어 기반 로컬 AI 지식 작업실</span>
+    </footer>
+  </body>
+</html>
