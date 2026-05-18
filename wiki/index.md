@@ -16,6 +16,7 @@ sources: []
 - [[Harness Engineering|하네스 엔지니어링]]
 - [[Useful GitHub Repositories|유용한 GitHub 저장소]]
 - [[Local AI Workbench|로컬 AI 작업실]]
+- [[TradingAgents|TradingAgents]]
 
 ## 영역
 

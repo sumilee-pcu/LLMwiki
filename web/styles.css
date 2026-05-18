@@ -246,6 +246,7 @@ a {
 }
 
 .flow-grid article,
+.agent-grid article,
 .link-grid a,
 .model-table,
 .terminal-panel {
@@ -260,10 +261,23 @@ a {
   padding: 22px;
 }
 
-.flow-grid span {
+.flow-grid span,
+.agent-grid span {
   color: var(--gold);
   font-size: 13px;
   font-weight: 850;
+}
+
+.agent-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.agent-grid article {
+  min-height: 220px;
+  padding: 24px;
+  background: linear-gradient(145deg, rgba(20, 48, 50, 0.88), rgba(11, 24, 26, 0.78));
 }
 
 .split {
@@ -414,6 +428,7 @@ pre {
   }
 
   .flow-grid,
+  .agent-grid,
   .link-grid,
   .split,
   .split.reverse {

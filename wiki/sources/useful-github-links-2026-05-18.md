@@ -30,6 +30,7 @@ source_path:
 | Pixal3D 데모 | https://huggingface.co/spaces/TencentARC/Pixal3D | Hugging Face Gradio 데모. |
 | blog-shotform-gen | https://github.com/gaebalai/claudecode-to/tree/main/plugins/blog-shotform-gen | 블로그 URL 1개로 60초 9:16 숏폼 mp4를 생성하는 Claude Code 플러그인. ElevenLabs, OpenAI 이미지 모델, Remotion을 사용한다. |
 | blog-shotform-gen 포함 저장소 | https://github.com/gaebalai/claudecode-to | Claude Code 플러그인 모음 저장소. 설치 명령에 `blog-shotform-gen@claudecode.to`가 포함되어 있다. |
+| TradingAgents | https://github.com/TauricResearch/TradingAgents | LLM 멀티에이전트 기반 금융 트레이딩 연구 프레임워크. 분석가, 연구자, 트레이더, 리스크 관리자 역할을 분리한다. |
 
 ## 표기 정정
 
@@ -38,4 +39,4 @@ source_path:
 ## 관련 문서
 
 - [[Useful GitHub Repositories|유용한 GitHub 저장소]]
-
+- [[TradingAgents|TradingAgents]]
