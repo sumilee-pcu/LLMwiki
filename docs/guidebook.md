@@ -219,8 +219,8 @@ Obsidian을 사용하면 LLMwiki를 시각적인 지식 그래프로 다룰 수 
 위키 링크는 다음 형식을 사용합니다.
 
 ```markdown
-[[Overview]]
-[[Log]]
+[[Overview|개요]]
+[[Log|변경 로그]]
 [[Retrieval Augmented Generation]]
 ```
 

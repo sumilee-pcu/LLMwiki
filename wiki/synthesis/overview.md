@@ -1,5 +1,5 @@
 ---
-title: "Overview"
+title: "개요"
 type: synthesis
 status: draft
 created: 2026-05-18
@@ -9,7 +9,7 @@ sources:
   - "https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f"
 ---
 
-# Overview
+# 개요
 
 ## 요약
 

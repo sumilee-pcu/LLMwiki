@@ -1,5 +1,5 @@
 ---
-title: "Harness Engineering"
+title: "하네스 엔지니어링"
 type: page
 status: draft
 created: 2026-05-18
@@ -13,7 +13,7 @@ sources:
   - "https://github.com/walkinglabs/learn-harness-engineering"
 ---
 
-# Harness Engineering
+# 하네스 엔지니어링
 
 ## 요약
 
