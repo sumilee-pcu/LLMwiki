@@ -16,6 +16,8 @@ LLM이 읽고, 갱신하고, 검증하기 쉬운 개인 지식 위키입니다. 
 raw/
   inbox/       새로 수집한 원천 자료
   assets/      이미지, PDF, 첨부 파일
+apps/
+  local-ai-workbench/  Ollama 로컬 모델과 위키 문맥을 연결하는 웹앱
 wiki/
   index.md     전체 색인
   log.md       변경/판단 로그
@@ -32,6 +34,15 @@ tools/
 python3 tools/wiki_lint.py
 rg "검색어" wiki raw
 ```
+
+로컬 AI 웹앱 실행:
+
+```bash
+cd apps/local-ai-workbench
+npm start
+```
+
+실행 후 `http://127.0.0.1:3100`에서 사용할 수 있습니다.
 
 Obsidian에서 열 때는 `/Users/sumilee/2026/LLMwiki` 폴더를 vault로 지정하면 됩니다.
 

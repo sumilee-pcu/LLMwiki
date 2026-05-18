@@ -15,6 +15,7 @@ sources: []
 - [[Overview|개요]]
 - [[Harness Engineering|하네스 엔지니어링]]
 - [[Useful GitHub Repositories|유용한 GitHub 저장소]]
+- [[Local AI Workbench|로컬 AI 작업실]]
 
 ## 영역
 
@@ -26,3 +27,4 @@ sources: []
 
 - 변경 로그: [[Log|변경 로그]]
 - 점검 명령: `python3 tools/wiki_lint.py`
+- 웹앱 실행: `cd apps/local-ai-workbench && npm start`

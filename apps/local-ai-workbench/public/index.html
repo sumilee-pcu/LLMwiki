@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Local AI Workbench</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">AI</div>
+          <div>
+            <h1>Local AI Workbench</h1>
+            <p>M5 Max 안에서 돌아가는 개인 AI 작업실</p>
+          </div>
+        </div>
+
+        <nav class="mode-list" aria-label="작업 모드">
+          <button class="mode active" data-mode="chat">
+            <span>채팅</span>
+            <small>모델 직접 사용</small>
+          </button>
+          <button class="mode" data-mode="wiki">
+            <span>LLMwiki</span>
+            <small>위키 기반 정리</small>
+          </button>
+          <button class="mode" data-mode="paper">
+            <span>MCP 논문</span>
+            <small>초안 검토</small>
+          </button>
+          <button class="mode" data-mode="github">
+            <span>도구 조사</span>
+            <small>GitHub 링크 분석</small>
+          </button>
+        </nav>
+
+        <section class="stack-card">
+          <h2>운영 스택</h2>
+          <div class="stack-row">
+            <span class="signal on"></span>
+            <div>
+              <strong>직접 웹앱</strong>
+              <small>현재 화면. Ollama API와 로컬 연결</small>
+            </div>
+          </div>
+          <div class="stack-row">
+            <span class="signal"></span>
+            <div>
+              <strong>Open WebUI</strong>
+              <small>Docker 준비 후 확장 후보</small>
+            </div>
+          </div>
+          <div class="stack-row">
+            <span class="signal"></span>
+            <div>
+              <strong>AnythingLLM</strong>
+              <small>문서 RAG 전용 앱 후보</small>
+            </div>
+          </div>
+        </section>
+      </aside>
+
+      <main class="workspace">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">LOCAL FIRST AI</p>
+            <h2 id="modeTitle">채팅 작업실</h2>
+          </div>
+          <div class="model-control">
+            <label for="modelSelect">모델</label>
+            <select id="modelSelect"></select>
+          </div>
+        </header>
+
+        <section class="hero-panel">
+          <div class="device-visual" aria-hidden="true">
+            <div class="chip">M5 Max</div>
+            <div class="screen">
+              <div class="grid-line"></div>
+              <div class="pulse one"></div>
+              <div class="pulse two"></div>
+              <div class="pulse three"></div>
+            </div>
+            <div class="base"></div>
+          </div>
+          <div class="hero-copy">
+            <h3>로컬 모델을 작업별로 나누어 씁니다</h3>
+            <p>주력은 <strong>gemma3:27b</strong>, 빠른 보조는 <strong>gemma3n:e4b</strong>, 대형 백업은 <strong>llama3.3:70b</strong>입니다. 데이터는 로컬 Ollama로만 전달됩니다.</p>
+          </div>
+          <div class="metric-grid">
+            <div>
+              <span>주력</span>
+              <strong>27.4B</strong>
+            </div>
+            <div>
+              <span>컨텍스트</span>
+              <strong>131K</strong>
+            </div>
+            <div>
+              <span>비전</span>
+              <strong>지원</strong>
+            </div>
+          </div>
+        </section>
+
+        <section class="quick-actions" aria-label="빠른 작업">
+          <button data-prompt="LLMwiki 운영 상태를 점검하고 다음 작업 우선순위를 한국어로 정리해줘.">위키 점검</button>
+          <button data-prompt="MCP 논문 초안의 구현 환경, 실험 검증, 참고문헌 보강 포인트를 한국어로 리뷰해줘.">논문 리뷰</button>
+          <button data-prompt="하네스 엔지니어링 관점에서 이 로컬 AI 작업실의 개선 체크리스트를 만들어줘.">하네스 체크</button>
+          <button data-prompt="설치된 로컬 모델들을 작업별로 어떻게 배치하면 좋을지 표로 정리해줘.">모델 배치</button>
+        </section>
+
+        <section class="chat-panel">
+          <div id="messages" class="messages" aria-live="polite"></div>
+          <form id="chatForm" class="composer">
+            <textarea id="promptInput" rows="3" placeholder="로컬 모델에게 맡길 일을 적어주세요. 예: LLMwiki 기준으로 오늘 작업 계획을 세워줘."></textarea>
+            <div class="composer-footer">
+              <div class="context-toggle">
+                <label><input type="checkbox" id="includeContext"> 현재 모드 문맥 포함</label>
+              </div>
+              <button type="submit" id="sendButton">실행</button>
+            </div>
+          </form>
+        </section>
+      </main>
+    </div>
+    <script src="/app.js"></script>
+  </body>
+</html>
+

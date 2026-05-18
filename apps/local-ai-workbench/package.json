@@ -1,0 +1,9 @@
+{
+  "name": "local-ai-workbench",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "LLMWIKI_DIR=../.. MCP_PAPER_DIR=../../../MCP_paper node server.js"
+  }
+}
