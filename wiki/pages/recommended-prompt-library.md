@@ -4,9 +4,10 @@ type: page
 status: draft
 created: 2026-05-20
 updated: 2026-05-21
-tags: [prompt-library, chatgpt, gemini, education, research, content-creation]
+tags: [prompt-library, chatgpt, gemini, education, research, content-creation, 4s-principle, prompt-techniques]
 sources:
   - "wiki/sources/prompt-library-books-2026-05.md"
+  - "wiki/sources/book-ai-pair-programming-2026-05.md"
 ---
 
 # 분야별 추천 프롬프트 라이브러리
@@ -14,6 +15,40 @@ sources:
 ## 요약
 
 강의·연구·집필·콘텐츠 제작 등 실제 업무 맥락에서 자주 쓰는 프롬프트를 8개 분야로 분류하고, 각 분야에서 ChatGPT가 강한 프롬프트와 Gemini가 강한 프롬프트를 구분해 정리한 문서다. 모델별 강점(ChatGPT: 추론·코드·문체 정제 / Gemini: Google 워크스페이스 연동·멀티모달·긴 컨텍스트)을 활용 시점에 맞게 골라 쓸 수 있도록 설계했다.
+
+## 공통 프롬프트 설계 원칙
+
+분야와 모델이 달라도 공통으로 적용되는 작성 원칙이다. 본 문서의 모든 분야별 프롬프트를 다듬을 때 점검 체크리스트로 사용한다. 자세한 출처는 [[book-ai-pair-programming-2026-05]] 참고.
+
+### 4S 원칙 (Single · Specific · Short · Surround)
+
+| 원칙 | 의미 | 적용 예 |
+| --- | --- | --- |
+| **Single** | 하나의 질문·작업에 집중 | 한 번에 "요약 + 번역 + 표 변환"을 시키지 말고 단계로 분리 |
+| **Specific** | 명확하고 상세하게 지시 | "잘 정리해줘" → "각 슬라이드의 제목·핵심 메시지·발표자 노트를 표로" |
+| **Short** | 간결하게 핵심을 전달 | 불필요한 수식어·중복 지시 제거 |
+| **Surround** | 주변 컨텍스트 제공 | 대상 독자, 분야, 출력 형식, 제약 조건을 함께 전달 |
+
+### 7가지 프롬프팅 테크닉
+
+| 테크닉 | 언제 쓰나 |
+| --- | --- |
+| **zero-shot** | 간단한 번역·지식 설명·일회성 변환 |
+| **one-shot** | 출력 형식의 예시 1개를 제시해 형식 고정 |
+| **few-shot** | 예시 2개 이상으로 결과 일관성을 끌어올림 |
+| **Chain of Thought (CoT)** | 추론 과정의 예시를 먼저 보여줘 단계적 사고 유도 |
+| **zero-shot CoT** | "한 단계씩 생각해봐" 한 줄로 단계적 사고 유도 |
+| **Tree of Thought (ToT)** | "여러 전문가가 각자 풀고 비교하라" — 다관점 분석 |
+| **ReAct** | "추론 → 행동(검색·실행) → 다시 추론"을 반복 — 에이전트형 |
+
+### 결과물 형식 강제 패턴
+
+| 패턴 | 효과 |
+| --- | --- |
+| `JSON 형식으로, key는 ..., value는 ...` | 파싱 가능한 출력으로 후속 처리 자동화 |
+| `<메뉴>...</메뉴>` 같은 **구역 태그** | 작업 범위 한정으로 할루시네이션 방지 |
+| `"...로 시작해주세요"` 같은 **시작 어구 지정** | 톤·문체 강제 |
+| `다시 / 더 짧게 / 더 구체적으로` 반복 | 결과물 점진 개선 (티키타카) |
 
 ## 1. 강의·교수학습 설계
 
@@ -98,3 +133,4 @@ sources:
 - [[Vibe Coding Use Cases|바이브 코딩 활용 사례]]
 - [[LLM Usage Economics|LLM 사용 경제학]]
 - [[prompt-library-books-2026-05|프롬프트·LLM 활용 도서 목록 2026-05]]
+- [[book-ai-pair-programming-2026-05|요즘 AI 페어 프로그래밍 — 4S 원칙과 7가지 테크닉]]

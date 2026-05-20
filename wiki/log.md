@@ -33,3 +33,5 @@ sources: []
 - 기존 페이지 3장을 cross-link로 보강했다. `recommended-prompt-library.md` 모델 선택 가이드에 Tier 차원 추가, `vibe-coding-use-cases.md`에 "비용 구조 영향" 섹션 추가, `harness-engineering.md`에 "비용 구조와 하네스 설계" 섹션 추가.
 - `index.md`에 "정책 스냅샷" 섹션과 "활용·실천" 항목 1건을 추가했다.
 - 개인 보유 전자책 라이브러리(약 461개 PDF) 중 프롬프트·LLM 활용 직결 도서 약 50권을 선별해 `prompt-library-books-2026-05.md` 카드로 정리했다. 10개 카테고리(프롬프트 직접 학습용 / 멀티 모델 비교 / 코딩·개발 / 에이전트·자동화 / LLM 응용·API·RAG / GPTs / 데이터·업무 / 콘텐츠 제작 / 연구·논문·강의 / 트렌드·이론)로 분류하고, 우선 추출 후보 5권을 명시했다. `recommended-prompt-library.md`의 sources에 등록했다.
+- 인벤토리 카테고리 3(코딩·개발)의 `요즘AI페어프로그래밍.pdf`(서지연, 골든래빗, 2024)에서 핵심 자산을 추출해 개별 카드 `book-ai-pair-programming-2026-05.md`를 작성했다. 4S 원칙(Single·Specific·Short·Surround), 7가지 프롬프팅 테크닉(zero/one/few-shot, CoT, zero-shot CoT, ToT, ReAct), 결과물 형식 강제 패턴을 추출해 `recommended-prompt-library.md` 상단에 "공통 프롬프트 설계 원칙" 섹션으로 신설했다(전 8개 분야에 공통 적용). 책 본문·도식·예시는 저작권 보호 대상이므로 일반화된 개념·명칭·구조만 인용했다.
+- `prompt-library-books-2026-05.md`에 "추출 완료" 섹션을 신설하고, 6개월 단위 갱신 일정(2026년 11월)을 구체화했다. 갱신 시 (1) 신간 추가, (2) 폐기 도서 정리, (3) 이미 추출된 원칙이 새 도구 환경에서 유효한지 검증, (4) 추출 완료 표에 갱신 일자 기록을 수행한다.
