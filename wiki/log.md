@@ -3,7 +3,7 @@ title: "변경 로그"
 type: log
 status: active
 created: 2026-05-18
-updated: 2026-05-20
+updated: 2026-05-21
 tags: [log]
 sources: []
 ---
@@ -24,3 +24,11 @@ sources: []
 - 바이브 코딩 활용 사례 페이지(`vibe-coding-use-cases.md`)를 추가했다. 10가지 활용 사례를 높음/중간/낮음 적합도로 분류하고, #4 폴더 구조 + #8 차시 PDF 세트화 결합을 가장 큰 레버리지로 판단했다.
 - `useful-github-repositories.md`에 "바이브코딩 교육" 카테고리를 신설하고 easy-vibe를 등록했다. 상세 평가는 출처 카드에 분리했다.
 - `index.md`에 "활용·실천" 섹션을 추가하고 신규 두 페이지를 연결했다.
+
+## 2026-05-21
+
+- LLM 구독 정책 전환 분석을 위키화했다. 시점 고정 사실(D-Day, 데이터 포인트, 1차 출처)과 영속적 원칙(Tier 모델, 로컬 LLM 전략)을 분리하는 원칙을 적용했다.
+- 출처 카드를 D-Day 기준으로 두 개로 분리했다. `llm-subscription-policy-2026-05-current.md`(D-Day 이전 현황)와 `llm-subscription-policy-2026-06-upcoming.md`(D-Day 이후 적용)을 짝으로 운영해, 정책 변경 시점 비교가 가능하도록 했다.
+- 영속 원칙 페이지 `llm-usage-economics.md`를 신설했다. 거시 명제, 작업 분류 3계층(Tier) 모델, 로컬 LLM 인프라 구성, 운영 원칙(시연 3중 백업·학습 환경 등급), 재사용 진단 도구를 포함한다.
+- 기존 페이지 3장을 cross-link로 보강했다. `recommended-prompt-library.md` 모델 선택 가이드에 Tier 차원 추가, `vibe-coding-use-cases.md`에 "비용 구조 영향" 섹션 추가, `harness-engineering.md`에 "비용 구조와 하네스 설계" 섹션 추가.
+- `index.md`에 "정책 스냅샷" 섹션과 "활용·실천" 항목 1건을 추가했다.

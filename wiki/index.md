@@ -3,7 +3,7 @@ title: "LLMwiki 색인"
 type: index
 status: active
 created: 2026-05-18
-updated: 2026-05-20
+updated: 2026-05-21
 tags: [index]
 sources: []
 ---
@@ -22,6 +22,12 @@ sources: []
 
 - [[Recommended Prompt Library|분야별 추천 프롬프트 라이브러리]]
 - [[Vibe Coding Use Cases|바이브 코딩 활용 사례]]
+- [[LLM Usage Economics|LLM 사용 경제학]]
+
+## 정책 스냅샷
+
+- [[llm-subscription-policy-2026-05-current|LLM 구독 정책 현황 2026-05 (D-Day 이전)]]
+- [[llm-subscription-policy-2026-06-upcoming|LLM 구독 정책 적용 예정 2026-06 (D-Day 이후)]]
 
 ## 영역
 

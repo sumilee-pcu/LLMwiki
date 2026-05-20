@@ -70,16 +70,21 @@ sources: []
 | ChatGPT | "다음 블로그 글을 60초 숏폼 스크립트(후킹 3초·본문 45초·CTA 12초)로 변환하고, 장면별 B-roll 키워드도 제시해줘." | 스토리텔링, 카피라이팅 |
 | Gemini | "이 글에 어울리는 썸네일 이미지를 4가지 스타일(미니멀/일러스트/실사/타이포)로 만들어줘." | Imagen 기반 이미지 생성, Veo 영상 생성 |
 
-## 모델 선택 가이드
+## 모델 선택 가이드 (모델 × 실행 위치)
 
-| 작업 성격 | 우선 모델 | 이유 |
-| --- | --- | --- |
-| 추론·구조화·문체 정제 | ChatGPT | 논리 흐름과 문장 품질에서 안정적 |
-| 코드 작성·디버깅 | ChatGPT | Canvas 단계적 수정, Code Interpreter 실행 |
-| 다수 PDF·긴 자료 동시 분석 | Gemini | 200만 토큰급 긴 컨텍스트 처리 |
-| Google 워크스페이스 연동 | Gemini | Gmail·Docs·Sheets·Slides 직접 작동 |
-| 이미지·영상 생성 | Gemini | Imagen·Veo 통합 |
-| 한국어 격식 문서 | ChatGPT | 학술·공문 어조 안정 |
+모델 선택과 함께 "어디서(클라우드/로컬) 돌릴지"를 동시에 결정해야 한다. 작업 분류 3계층 모델은 [[LLM Usage Economics|LLM 사용 경제학]]을 참고한다.
+
+| 작업 성격 | 우선 모델 | 실행 위치 (Tier) | 이유 |
+| --- | --- | --- | --- |
+| 추론·구조화·문체 정제 | ChatGPT | Tier 1 (클라우드 프런티어) | 논리 흐름과 문장 품질에서 안정적 |
+| 코드 작성·디버깅 (최종) | ChatGPT | Tier 1 | Canvas 단계적 수정, Code Interpreter 실행 |
+| 코드 대량 초안·주석 | 로컬 모델 (Qwen Coder 등) | Tier 3 (로컬 LLM) | 반복 작업, 비용 노출 차단 |
+| 다수 PDF·긴 자료 동시 분석 | Gemini | Tier 1 | 긴 컨텍스트 처리 |
+| Google 워크스페이스 연동 | Gemini | Tier 1 | Gmail·Docs·Sheets·Slides 직접 작동 |
+| 이미지·영상 생성 | Gemini | Tier 1 | Imagen·Veo 통합 |
+| 한국어 격식 문서 | ChatGPT | Tier 1 | 학술·공문 어조 안정 |
+| 문서 요약·태깅·표 변환 | 로컬 모델 (Gemma 9B 등) | Tier 3 | 대량 반복, ROI 우수 |
+| 프롬프트 반복 테스트 | 로컬 모델 | Tier 3 | 자동화 비용 분리 흐름과 정합 |
 
 ## 다음 작업
 
@@ -90,3 +95,4 @@ sources: []
 ## 출처
 
 - [[Vibe Coding Use Cases|바이브 코딩 활용 사례]]
+- [[LLM Usage Economics|LLM 사용 경제학]]

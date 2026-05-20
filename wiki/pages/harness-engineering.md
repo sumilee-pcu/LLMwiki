@@ -3,14 +3,15 @@ title: "하네스 엔지니어링"
 type: page
 status: draft
 created: 2026-05-18
-updated: 2026-05-18
-tags: [harness-engineering, codex, agent]
+updated: 2026-05-21
+tags: [harness-engineering, codex, agent, cost-strategy]
 sources:
   - "https://openai.com/index/harness-engineering/"
   - "https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents"
   - "https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html"
   - "https://github.com/openai/codex"
   - "https://github.com/walkinglabs/learn-harness-engineering"
+  - "wiki/sources/llm-subscription-policy-2026-06-upcoming.md"
 ---
 
 # 하네스 엔지니어링
@@ -90,12 +91,27 @@ AI 에이전트는 한 번의 답변보다 여러 단계의 작업에서 더 큰
 - [ ] 하네스 관련 참고자료 4개가 각각 `wiki/sources/`에 요약되어 있다.
 - [ ] 세션 시작 스크립트 또는 체크리스트가 있다.
 
+## 비용 구조와 하네스 설계
+
+장시간 실행되는 에이전트는 토큰·도구 호출·컨텍스트 유지 비용이 단일 채팅 대비 수십~수백 배 발생한다. 공급자들이 2026년 들어 인터랙티브 사용과 프로그래매틱 사용의 회계 기준을 분리하기 시작하면서, 하네스 설계의 의사결정에 비용 차원이 추가되었다.
+
+| 설계 결정 | 비용 영향 |
+| --- | --- |
+| 에이전트 재시도 횟수 한도 | 무한 루프 시 크레딧 폭발 직격탄 |
+| 컨텍스트 윈도우 크기 | 매 호출의 입력 토큰 단가 결정 |
+| 도구 호출 빈도 | 다중 도구 체이닝은 호출 수 누적 |
+| 백엔드 모델 선택 | 동일 하네스도 로컬 LLM vs 프런티어 모델 선택에 따라 비용 차이 극단적 |
+| 자동화 트리거 조건 | cron/이벤트 트리거의 빈도가 월 누적 사용량 결정 |
+
+따라서 하네스 설계 시 "안정성·검증" 외에 "어느 작업을 어느 Tier에서 실행할지"를 명시적으로 정해야 한다. 자세한 작업 분류 원칙은 [[LLM Usage Economics|LLM 사용 경제학]] 참고.
+
 ## 다음 작업
 
 1. OpenAI, Anthropic, Martin Fowler, OpenAI Codex, walkinglabs 저장소를 각각 `wiki/sources/`에 요약 카드로 정리한다.
 2. `tools/wiki_lint.py`가 front matter와 `출처` 섹션을 검사하도록 확장한다.
 3. 작업 시작 체크리스트를 `docs/session-checklist.md`로 만든다.
 4. GitHub push 권한을 해결한 뒤 원격 저장소에 배포한다.
+5. 하네스별 비용 프로파일 측정 템플릿을 작성한다(재시도 한도·컨텍스트 크기·도구 호출 수 기록).
 
 ## 출처
 
