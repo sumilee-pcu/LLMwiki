@@ -32,6 +32,7 @@ sources: []
 - 영속 원칙 페이지 `llm-usage-economics.md`를 신설했다. 거시 명제, 작업 분류 3계층(Tier) 모델, 로컬 LLM 인프라 구성, 운영 원칙(시연 3중 백업·학습 환경 등급), 재사용 진단 도구를 포함한다.
 - 기존 페이지 3장을 cross-link로 보강했다. `recommended-prompt-library.md` 모델 선택 가이드에 Tier 차원 추가, `vibe-coding-use-cases.md`에 "비용 구조 영향" 섹션 추가, `harness-engineering.md`에 "비용 구조와 하네스 설계" 섹션 추가.
 - `index.md`에 "정책 스냅샷" 섹션과 "활용·실천" 항목 1건을 추가했다.
-- 개인 보유 전자책 라이브러리(약 461개 PDF) 중 프롬프트·LLM 활용 직결 도서 약 50권을 선별해 `prompt-library-books-2026-05.md` 카드로 정리했다. 10개 카테고리(프롬프트 직접 학습용 / 멀티 모델 비교 / 코딩·개발 / 에이전트·자동화 / LLM 응용·API·RAG / GPTs / 데이터·업무 / 콘텐츠 제작 / 연구·논문·강의 / 트렌드·이론)로 분류하고, 우선 추출 후보 5권을 명시했다. `recommended-prompt-library.md`의 sources에 등록했다.
-- 인벤토리 카테고리 3(코딩·개발)의 `요즘AI페어프로그래밍.pdf`(서지연, 골든래빗, 2024)에서 핵심 자산을 추출해 개별 카드 `book-ai-pair-programming-2026-05.md`를 작성했다. 4S 원칙(Single·Specific·Short·Surround), 7가지 프롬프팅 테크닉(zero/one/few-shot, CoT, zero-shot CoT, ToT, ReAct), 결과물 형식 강제 패턴을 추출해 `recommended-prompt-library.md` 상단에 "공통 프롬프트 설계 원칙" 섹션으로 신설했다(전 8개 분야에 공통 적용). 책 본문·도식·예시는 저작권 보호 대상이므로 일반화된 개념·명칭·구조만 인용했다.
-- `prompt-library-books-2026-05.md`에 "추출 완료" 섹션을 신설하고, 6개월 단위 갱신 일정(2026년 11월)을 구체화했다. 갱신 시 (1) 신간 추가, (2) 폐기 도서 정리, (3) 이미 추출된 원칙이 새 도구 환경에서 유효한지 검증, (4) 추출 완료 표에 갱신 일자 기록을 수행한다.
+- 시중 출판 교재 중 프롬프트·LLM 활용 직결 도서 약 50권을 선별해 `prompt-library-books-2026-05.md` 카드로 정리했다. 10개 카테고리(프롬프트 직접 학습용 / 멀티 모델 비교 / 코딩·개발 / 에이전트·자동화 / LLM 응용·API·RAG / GPTs / 데이터·업무 / 콘텐츠 제작 / 연구·논문·강의 / 트렌드·이론)로 분류하고, 우선 추출 후보 5권을 명시했다. `recommended-prompt-library.md`의 sources에 등록했다.
+- 코딩·개발 카테고리의 시중 교재 한 권을 참조해 개별 카드 `book-ai-pair-programming-2026-05.md`를 작성하고, `recommended-prompt-library.md` 상단에 "공통 프롬프트 작성 가이드" 섹션을 신설했다(전 8개 분야에 공통 적용).
+- `prompt-library-books-2026-05.md`에 "참조 완료" 섹션과 6개월 단위 갱신 일정(2026년 11월)을 구체화했다.
+- 저작권 안전화 정리: 위키 본문에는 (1) 학술 일차 출처가 있는 일반 용어(zero/one/few-shot, Chain of Thought, Tree of Thought, ReAct 등)와 (2) 일반화된 프롬프트 작성 점검 항목·결과물 형식 강제 패턴만 둔다. 도서 본문의 원칙·약어·예시·도식·표는 위키에 직접 옮기지 않는다. 책 카드도 본문 추출 표 없이 도서 메타데이터와 위키 적용 흔적만 기록한다. 인벤토리 카드의 자료 출처 표현과 "추출 완료/참조 완료" 명명을 모두 시중 교재 기준으로 일반화했다.
