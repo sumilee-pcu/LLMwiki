@@ -3,7 +3,7 @@ title: "LLMwiki 색인"
 type: index
 status: active
 created: 2026-05-18
-updated: 2026-05-18
+updated: 2026-05-20
 tags: [index]
 sources: []
 ---
@@ -17,6 +17,11 @@ sources: []
 - [[Useful GitHub Repositories|유용한 GitHub 저장소]]
 - [[Local AI Workbench|로컬 AI 작업실]]
 - [[TradingAgents|TradingAgents]]
+
+## 활용·실천
+
+- [[Recommended Prompt Library|분야별 추천 프롬프트 라이브러리]]
+- [[Vibe Coding Use Cases|바이브 코딩 활용 사례]]
 
 ## 영역
 
