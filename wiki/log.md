@@ -32,3 +32,4 @@ sources: []
 - 영속 원칙 페이지 `llm-usage-economics.md`를 신설했다. 거시 명제, 작업 분류 3계층(Tier) 모델, 로컬 LLM 인프라 구성, 운영 원칙(시연 3중 백업·학습 환경 등급), 재사용 진단 도구를 포함한다.
 - 기존 페이지 3장을 cross-link로 보강했다. `recommended-prompt-library.md` 모델 선택 가이드에 Tier 차원 추가, `vibe-coding-use-cases.md`에 "비용 구조 영향" 섹션 추가, `harness-engineering.md`에 "비용 구조와 하네스 설계" 섹션 추가.
 - `index.md`에 "정책 스냅샷" 섹션과 "활용·실천" 항목 1건을 추가했다.
+- 개인 보유 전자책 라이브러리(약 461개 PDF) 중 프롬프트·LLM 활용 직결 도서 약 50권을 선별해 `prompt-library-books-2026-05.md` 카드로 정리했다. 10개 카테고리(프롬프트 직접 학습용 / 멀티 모델 비교 / 코딩·개발 / 에이전트·자동화 / LLM 응용·API·RAG / GPTs / 데이터·업무 / 콘텐츠 제작 / 연구·논문·강의 / 트렌드·이론)로 분류하고, 우선 추출 후보 5권을 명시했다. `recommended-prompt-library.md`의 sources에 등록했다.

@@ -3,9 +3,10 @@ title: "분야별 추천 프롬프트 라이브러리"
 type: page
 status: draft
 created: 2026-05-20
-updated: 2026-05-20
+updated: 2026-05-21
 tags: [prompt-library, chatgpt, gemini, education, research, content-creation]
-sources: []
+sources:
+  - "wiki/sources/prompt-library-books-2026-05.md"
 ---
 
 # 분야별 추천 프롬프트 라이브러리
@@ -96,3 +97,4 @@ sources: []
 
 - [[Vibe Coding Use Cases|바이브 코딩 활용 사례]]
 - [[LLM Usage Economics|LLM 사용 경제학]]
+- [[prompt-library-books-2026-05|프롬프트·LLM 활용 도서 목록 2026-05]]
