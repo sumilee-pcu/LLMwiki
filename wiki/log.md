@@ -3,7 +3,7 @@ title: "변경 로그"
 type: log
 status: active
 created: 2026-05-18
-updated: 2026-05-21
+updated: 2026-05-28
 tags: [log]
 sources: []
 ---
@@ -37,3 +37,10 @@ sources: []
 - `prompt-library-books-2026-05.md`에 "참조 완료" 섹션과 6개월 단위 갱신 일정(2026년 11월)을 구체화했다.
 - 저작권 안전화 정리: 위키 본문에는 (1) 학술 일차 출처가 있는 일반 용어(zero/one/few-shot, Chain of Thought, Tree of Thought, ReAct 등)와 (2) 일반화된 프롬프트 작성 점검 항목·결과물 형식 강제 패턴만 둔다. 도서 본문의 원칙·약어·예시·도식·표는 위키에 직접 옮기지 않는다. 책 카드도 본문 추출 표 없이 도서 메타데이터와 위키 적용 흔적만 기록한다. 인벤토리 카드의 자료 출처 표현과 "추출 완료/참조 완료" 명명을 모두 시중 교재 기준으로 일반화했다.
 - `prompt-library-books-2026-05.md`에 "활용 가능 도서 (2025+ 출간)" 섹션을 신설했다. 2025-2026년 출간 기준으로 즉시 활용 가능한 시중 교재 15권(주로 한빛미디어·이지스·제이펍·리코멘드·스마트북스), 부분 활용 2권(2024년 이전 도구 기반), 실물 확인 필요 3권(파일명만으로 정식 출판본 특정 실패)으로 그룹화했다. GitHub URL은 웹 검색만으로 특정되지 않은 도서가 대부분이라 공란 처리하고 보강 절차(머리말 안내 → 출판사 예제 페이지 → 저자 GitHub 프로필 순)를 명시했다.
+
+## 2026-05-28
+
+- Microsoft SkillOpt를 LLMwiki에 추가했다. `wiki/sources/skillopt-2026-05-28.md`에는 프로젝트 페이지, GitHub 저장소, arXiv v2 기준 팩트체크를 분리해 기록했다.
+- `wiki/pages/skillopt.md`를 신설했다. text-space optimization, validation-gated update, bounded edit, rejected-edit buffer, `best_skill.md` artifact를 LLMwiki의 하네스·프롬프트·Codex 운영과 연결했다.
+- 프로젝트 페이지와 arXiv v2 사이의 성능 수치 불일치를 명시했다. 위키 본문에서는 arXiv v2 기준 GPT-5.5 direct chat +23.5, Codex +24.8, Claude Code +19.1을 우선 인용한다.
+- `wiki/index.md`와 `wiki/pages/useful-github-repositories.md`에 SkillOpt 링크를 추가했다.

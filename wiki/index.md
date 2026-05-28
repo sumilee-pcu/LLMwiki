@@ -3,7 +3,7 @@ title: "LLMwiki 색인"
 type: index
 status: active
 created: 2026-05-18
-updated: 2026-05-21
+updated: 2026-05-28
 tags: [index]
 sources: []
 ---
@@ -14,6 +14,7 @@ sources: []
 
 - [[Overview|개요]]
 - [[Harness Engineering|하네스 엔지니어링]]
+- [[SkillOpt]]
 - [[Useful GitHub Repositories|유용한 GitHub 저장소]]
 - [[Local AI Workbench|로컬 AI 작업실]]
 - [[TradingAgents|TradingAgents]]
