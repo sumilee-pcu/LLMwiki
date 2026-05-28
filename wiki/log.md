@@ -45,3 +45,4 @@ sources: []
 - 프로젝트 페이지와 arXiv v2 사이의 성능 수치 불일치를 명시했다. 위키 본문에서는 arXiv v2 기준 GPT-5.5 direct chat +23.5, Codex +24.8, Claude Code +19.1을 우선 인용한다.
 - `wiki/index.md`와 `wiki/pages/useful-github-repositories.md`에 SkillOpt 링크를 추가했다.
 - 법령규칙 MCP 메모를 보강했다. `chrisryugj/korean-law-mcp`의 원격 MCP 주소 `https://korean-law-mcp.fly.dev/mcp`, 로컬 설치 명령 `npm install -g korean-law-mcp`, open.law.go.kr API 키 필요 조건, HWP/PDF 파싱 부가 후보 `chrisryugj/kordoc`를 `useful-github-repositories.md`와 출처 카드에 반영했다.
+- HumanLayer의 `12-factor-agents`를 LLMwiki에 추가했다. `wiki/sources/12-factor-agents-2026-05-28.md`에는 GitHub star 수, 라이선스, 12가지 원칙, 사용자 요약 팩트체크를 기록했고, `wiki/pages/12-factor-agents.md`에는 프로덕션급 LLM agent 설계 원칙과 LLMwiki 적용 방향을 정리했다.

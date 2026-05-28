@@ -22,8 +22,9 @@ LLM이 읽고, 갱신하고, 검증하기 쉬운 개인 지식 위키입니다. 
 
 1. [개요](wiki/synthesis/overview.md) — 위키 전체 구조와 시작점
 2. [하네스 엔지니어링](wiki/pages/harness-engineering.md) — 왜 이런 구조로 정리하는지
-3. [SkillOpt](wiki/pages/skillopt.md) — 에이전트 skill 자동 최적화와 검증 게이트 기반 PromptOps
-4. [유용한 GitHub 저장소](wiki/pages/useful-github-repositories.md) — 위키가 다루는 도구 카탈로그
+3. [12-Factor Agents](wiki/pages/12-factor-agents.md) — 매일 쓸 수 있는 에이전트를 위한 소프트웨어 설계 원칙
+4. [SkillOpt](wiki/pages/skillopt.md) — 에이전트 skill 자동 최적화와 검증 게이트 기반 PromptOps
+5. [유용한 GitHub 저장소](wiki/pages/useful-github-repositories.md) — 위키가 다루는 도구 카탈로그
 
 ### AI 도구 실무 활용법이 궁금할 때
 
@@ -39,9 +40,10 @@ LLM이 읽고, 갱신하고, 검증하기 쉬운 개인 지식 위키입니다. 
 ### 에이전트·자동화 설계 참고
 
 1. [하네스 엔지니어링](wiki/pages/harness-engineering.md) — 장시간 에이전트 설계 원칙과 비용 고려
-2. [SkillOpt](wiki/pages/skillopt.md) — 자연어 skill 문서를 검증 루프로 자동 개선하는 방식
-3. [TradingAgents](wiki/pages/tradingagents.md) — 멀티에이전트 역할 분리 사례
-4. [로컬 AI 작업실](wiki/pages/local-ai-workbench.md) — Ollama 로컬 모델과 위키 문맥 연결
+2. [12-Factor Agents](wiki/pages/12-factor-agents.md) — context, state, control flow, human approval을 소유하는 agent 구조
+3. [SkillOpt](wiki/pages/skillopt.md) — 자연어 skill 문서를 검증 루프로 자동 개선하는 방식
+4. [TradingAgents](wiki/pages/tradingagents.md) — 멀티에이전트 역할 분리 사례
+5. [로컬 AI 작업실](wiki/pages/local-ai-workbench.md) — Ollama 로컬 모델과 위키 문맥 연결
 
 ## 콘텐츠 맵
 
@@ -50,6 +52,7 @@ LLM이 읽고, 갱신하고, 검증하기 쉬운 개인 지식 위키입니다. 
 | 페이지 | 다루는 내용 |
 | --- | --- |
 | [하네스 엔지니어링](wiki/pages/harness-engineering.md) | 장시간 LLM 에이전트가 안정적으로 일하도록 설계하는 방법. 지침·상태·검증·범위·세션 생명주기와 비용 차원 |
+| [12-Factor Agents](wiki/pages/12-factor-agents.md) | 프로덕션급 LLM 에이전트를 일반 소프트웨어처럼 설계하기 위한 12가지 원칙. context window, control flow, human-in-the-loop, stateless reducer 중심 |
 | [SkillOpt](wiki/pages/skillopt.md) | 자연어 skill 문서를 text-space optimization 대상으로 삼아 rollout, reflection, bounded edit, validation gate로 개선하는 프레임워크 |
 | [LLM 사용 경제학](wiki/pages/llm-usage-economics.md) | 작업 분류 3계층(Tier) 모델, 로컬 LLM 인프라 구성, 시연 3중 백업, 학습 환경 등급, 재사용 진단 도구 |
 | [분야별 추천 프롬프트 라이브러리](wiki/pages/recommended-prompt-library.md) | 강의·연구·집필·코딩·데이터 분석·발표·행정·콘텐츠 8개 분야에서 ChatGPT와 Gemini 강점 구분 |
@@ -62,6 +65,7 @@ LLM이 읽고, 갱신하고, 검증하기 쉬운 개인 지식 위키입니다. 
 
 | 카드 | 출처 |
 | --- | --- |
+| [12-Factor Agents 검증 메모 2026-05-28](wiki/sources/12-factor-agents-2026-05-28.md) | humanlayer/12-factor-agents GitHub 저장소와 주요 factor 문서 |
 | [SkillOpt 공개와 논문 v2 팩트체크 2026-05-28](wiki/sources/skillopt-2026-05-28.md) | Microsoft SkillOpt 프로젝트 페이지, GitHub 저장소, arXiv v2 논문 |
 | [easy-vibe 저장소 평가 2026-05-20](wiki/sources/easy-vibe-2026-05-20.md) | datawhalechina/easy-vibe 저장소(바이브 코딩 3단계 커리큘럼) 검증 |
 | [LLM 구독 정책 현황 2026-05](wiki/sources/llm-subscription-policy-2026-05-current.md) | 2026-06 D-Day 이전 3대 공급자 정책 스냅샷 |

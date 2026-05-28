@@ -3,8 +3,8 @@ title: "하네스 엔지니어링"
 type: page
 status: draft
 created: 2026-05-18
-updated: 2026-05-21
-tags: [harness-engineering, codex, agent, cost-strategy]
+updated: 2026-05-28
+tags: [harness-engineering, codex, agent, cost-strategy, 12-factor-agents]
 sources:
   - "https://openai.com/index/harness-engineering/"
   - "https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents"
@@ -12,6 +12,7 @@ sources:
   - "https://github.com/openai/codex"
   - "https://github.com/walkinglabs/learn-harness-engineering"
   - "wiki/sources/llm-subscription-policy-2026-06-upcoming.md"
+  - "wiki/sources/12-factor-agents-2026-05-28.md"
 ---
 
 # 하네스 엔지니어링
@@ -79,6 +80,8 @@ AI 에이전트는 한 번의 답변보다 여러 단계의 작업에서 더 큰
 
 따라서 하네스 엔지니어링 주제를 LLMwiki에 추가할 때 좋은 참고자료로 사용할 수 있다.
 
+`humanlayer/12-factor-agents`는 production-quality LLM agent를 일반 소프트웨어처럼 설계하기 위한 원칙 모음이다. LLMwiki 하네스 관점에서는 특히 context window 소유, 실행 상태와 업무 상태 통합, human-in-the-loop tool call, 작은 focused agent, stateless reducer 설계가 중요하다. 자세한 내용은 [[12-Factor Agents]] 참고.
+
 ## LLMwiki 적용 체크리스트
 
 - [x] `AGENTS.md`가 있다.
@@ -120,3 +123,4 @@ AI 에이전트는 한 번의 답변보다 여러 단계의 작업에서 더 큰
 - [Martin Fowler - Harness Engineering](https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html)
 - [GitHub - OpenAI Codex](https://github.com/openai/codex)
 - [walkinglabs/learn-harness-engineering](https://github.com/walkinglabs/learn-harness-engineering)
+- [[12-factor-agents-2026-05-28|12-Factor Agents 검증 메모 2026-05-28]]

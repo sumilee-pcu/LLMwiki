@@ -14,6 +14,7 @@ sources: []
 
 - [[Overview|개요]]
 - [[Harness Engineering|하네스 엔지니어링]]
+- [[12-Factor Agents]]
 - [[SkillOpt]]
 - [[Useful GitHub Repositories|유용한 GitHub 저장소]]
 - [[Local AI Workbench|로컬 AI 작업실]]
