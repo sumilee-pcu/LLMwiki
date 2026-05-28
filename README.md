@@ -29,7 +29,8 @@ LLM이 읽고, 갱신하고, 검증하기 쉬운 개인 지식 위키입니다. 
 ### AI 도구 실무 활용법이 궁금할 때
 
 1. [분야별 추천 프롬프트 라이브러리](wiki/pages/recommended-prompt-library.md) — 8개 분야 × ChatGPT/Gemini 프롬프트 매트릭스
-2. [바이브 코딩 활용 사례](wiki/pages/vibe-coding-use-cases.md) — 10가지 활용 사례 적합도 분류
+2. [AI 답변 물타기 방지 모드](wiki/pages/anti-fluff-custom-instructions.md) — 과포장·반복·애매한 중립 답변을 줄이는 커스텀 인스트럭션
+3. [바이브 코딩 활용 사례](wiki/pages/vibe-coding-use-cases.md) — 10가지 활용 사례 적합도 분류
 
 ### LLM 비용·정책 변화에 대응할 때
 
@@ -56,6 +57,7 @@ LLM이 읽고, 갱신하고, 검증하기 쉬운 개인 지식 위키입니다. 
 | [SkillOpt](wiki/pages/skillopt.md) | 자연어 skill 문서를 text-space optimization 대상으로 삼아 rollout, reflection, bounded edit, validation gate로 개선하는 프레임워크 |
 | [LLM 사용 경제학](wiki/pages/llm-usage-economics.md) | 작업 분류 3계층(Tier) 모델, 로컬 LLM 인프라 구성, 시연 3중 백업, 학습 환경 등급, 재사용 진단 도구 |
 | [분야별 추천 프롬프트 라이브러리](wiki/pages/recommended-prompt-library.md) | 강의·연구·집필·코딩·데이터 분석·발표·행정·콘텐츠 8개 분야에서 ChatGPT와 Gemini 강점 구분 |
+| [AI 답변 물타기 방지 모드](wiki/pages/anti-fluff-custom-instructions.md) | 불필요한 리액션, 질문 재포장, 과도한 포맷팅, 근거 없는 확신을 줄이는 커스텀 인스트럭션 |
 | [바이브 코딩 활용 사례](wiki/pages/vibe-coding-use-cases.md) | 10가지 활용 사례를 높음/중간/낮음 적합도로 분류 + 비용 구조 영향 매핑 |
 | [유용한 GitHub 저장소](wiki/pages/useful-github-repositories.md) | 법률 MCP, 카카오톡 MCP, 보이스 에이전트, 3D 생성, 숏폼, 금융 멀티에이전트, 바이브코딩 교육 카테고리 |
 | [TradingAgents](wiki/pages/tradingagents.md) | LLM 멀티에이전트 기반 트레이딩 연구 프레임워크. 역할 분리 패턴 참고 자료 |
@@ -66,6 +68,7 @@ LLM이 읽고, 갱신하고, 검증하기 쉬운 개인 지식 위키입니다. 
 | 카드 | 출처 |
 | --- | --- |
 | [12-Factor Agents 검증 메모 2026-05-28](wiki/sources/12-factor-agents-2026-05-28.md) | humanlayer/12-factor-agents GitHub 저장소와 주요 factor 문서 |
+| [AI 답변 물타기 방지 커스텀 인스트럭션 메모 2026-05-28](wiki/sources/anti-fluff-custom-instructions-2026-05-28.md) | 사용자 제공 커스텀 인스트럭션 패턴 |
 | [SkillOpt 공개와 논문 v2 팩트체크 2026-05-28](wiki/sources/skillopt-2026-05-28.md) | Microsoft SkillOpt 프로젝트 페이지, GitHub 저장소, arXiv v2 논문 |
 | [easy-vibe 저장소 평가 2026-05-20](wiki/sources/easy-vibe-2026-05-20.md) | datawhalechina/easy-vibe 저장소(바이브 코딩 3단계 커리큘럼) 검증 |
 | [LLM 구독 정책 현황 2026-05](wiki/sources/llm-subscription-policy-2026-05-current.md) | 2026-06 D-Day 이전 3대 공급자 정책 스냅샷 |
