@@ -3,8 +3,8 @@ title: "유용한 GitHub 링크 목록 2026-05-18"
 type: source
 status: draft
 created: 2026-05-18
-updated: 2026-05-18
-tags: [github, mcp, voice-agent, screen-recording, 3d-generation, shortform]
+updated: 2026-05-28
+tags: [github, mcp, legal-tech, voice-agent, screen-recording, 3d-generation, shortform]
 source_url:
 source_path:
 ---
@@ -20,7 +20,8 @@ source_path:
 | 항목 | 출처 링크 | 확인 메모 |
 | --- | --- | --- |
 | 한국 법률 검색기 | https://github.com/seo-jinseok/korean-law-mcp | 대한민국 법령/판례 검색기 Korean Law MCP. Claude 같은 AI와 연결하고 국가법령정보센터 Open API ID를 사용한다. |
-| 한국 법률 검색기 대안 후보 | https://github.com/chrisryugj/korean-law-mcp | 국가법령정보 MCP v4.0 계열. 법제처 API 기반 조문·판례 검색과 인용 검증 기능을 강조한다. |
+| korean-law-mcp | https://github.com/chrisryugj/korean-law-mcp | 법령·규칙·판례 검색 MCP. 원격 MCP 주소 `https://korean-law-mcp.fly.dev/mcp`는 API 키 없이 사용 가능. 로컬 설치는 `npm install -g korean-law-mcp`이며, API 키는 https://open.law.go.kr 에서 무료 발급한다. |
+| kordoc | https://github.com/chrisryugj/kordoc | HWP/PDF 파싱 부가 도구. 법령·행정 문서 원문 처리와 함께 검토할 후보. |
 | Dograh | https://github.com/dograh-hq/dograh | 오픈소스·셀프호스팅 가능한 Voice Agent 플랫폼. Vapi/Retell 대안으로 소개된다. |
 | OpenScreen | https://github.com/siddharthvaddem/openscreen | Screen Studio 대안 오픈소스 화면 녹화·데모 제작 앱. Windows 설치도 지원한다. |
 | 카카오톡 비서 | https://github.com/hadamyeedady12-dev/kmsg-mcp | Claude Code에서 카카오톡 읽기·보내기·파일 전송을 하도록 만든 MCP 서버. |
@@ -35,6 +36,12 @@ source_path:
 ## 표기 정정
 
 원문 항목에는 `blog-shortform-gen`으로 적혀 있었지만, 실제 저장소 경로는 `blog-shotform-gen`으로 확인되었다.
+
+## 2026-05-28 추가 메모
+
+- `chrisryugj/korean-law-mcp`의 원격 MCP 연결 주소를 `https://korean-law-mcp.fly.dev/mcp`로 기록했다. 사용자 제공 정보 기준으로 API 키 없이 연결 가능한 후보로 둔다.
+- 로컬 설치 경로는 `npm install -g korean-law-mcp`이며, 이 경우 [국가법령정보 공동활용](https://open.law.go.kr) 무료 API 키가 필요하다.
+- HWP/PDF 파싱 부가 후보로 `chrisryugj/kordoc`를 추가했다.
 
 ## 관련 문서
 
