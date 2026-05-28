@@ -47,3 +47,4 @@ sources: []
 - 법령규칙 MCP 메모를 보강했다. `chrisryugj/korean-law-mcp`의 원격 MCP 주소 `https://korean-law-mcp.fly.dev/mcp`, 로컬 설치 명령 `npm install -g korean-law-mcp`, open.law.go.kr API 키 필요 조건, HWP/PDF 파싱 부가 후보 `chrisryugj/kordoc`를 `useful-github-repositories.md`와 출처 카드에 반영했다.
 - HumanLayer의 `12-factor-agents`를 LLMwiki에 추가했다. `wiki/sources/12-factor-agents-2026-05-28.md`에는 GitHub star 수, 라이선스, 12가지 원칙, 사용자 요약 팩트체크를 기록했고, `wiki/pages/12-factor-agents.md`에는 프로덕션급 LLM agent 설계 원칙과 LLMwiki 적용 방향을 정리했다.
 - 사용자 제공 "AI 답변 물타기 방지 모드" 커스텀 인스트럭션을 추가했다. `wiki/pages/anti-fluff-custom-instructions.md`에는 불필요한 리액션 제거, 포맷팅 제한, 정직 모드, 가정 공개, 반복 제거, 확신 수준 표시, 의견 요청 시 선택 규칙을 정리했고 `recommended-prompt-library.md`와 연결했다.
+- Perplexity Deep Research를 활용한 사업 아이디어 검증 패턴을 추가했다. `wiki/pages/perplexity-business-idea-validation.md`에는 아이디어 한 줄 템플릿, 시장 검증 프롬프트, Build/Test/Avoid 판정 기준을 정리했고, `recommended-prompt-library.md`와 `vibe-coding-use-cases.md`에 구현 전 시장성 검증 단계로 연결했다.

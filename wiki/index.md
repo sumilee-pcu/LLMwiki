@@ -24,6 +24,7 @@ sources: []
 
 - [[Recommended Prompt Library|분야별 추천 프롬프트 라이브러리]]
 - [[anti-fluff-custom-instructions|AI 답변 물타기 방지 모드]]
+- [[perplexity-business-idea-validation|Perplexity 사업 아이디어 검증]]
 - [[Vibe Coding Use Cases|바이브 코딩 활용 사례]]
 - [[LLM Usage Economics|LLM 사용 경제학]]
 

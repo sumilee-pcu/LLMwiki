@@ -3,10 +3,11 @@ title: "바이브 코딩 활용 사례"
 type: page
 status: draft
 created: 2026-05-20
-updated: 2026-05-20
-tags: [vibe-coding, education, workflow, ai-integration, curriculum]
+updated: 2026-05-28
+tags: [vibe-coding, education, workflow, ai-integration, curriculum, business-validation]
 sources:
   - "wiki/sources/easy-vibe-2026-05-20.md"
+  - "wiki/sources/perplexity-business-validation-2026-05-28.md"
 ---
 
 # 바이브 코딩 활용 사례
@@ -54,6 +55,10 @@ sources:
 
 ## 핵심 시사점
 
+### 0. 구현 전 시장성 검증을 먼저 둔다
+
+바이브 코딩은 구현 속도를 올리지만, 수요가 약한 아이디어를 빠르게 만드는 위험도 키운다. 새 앱이나 서비스 아이디어는 구현 전에 [[perplexity-business-idea-validation|Perplexity 사업 아이디어 검증]] 방식으로 시장성, 지불 의사, 경쟁, 리스크, MVP 가능성을 먼저 점검한다.
+
 ### 1. #4 + #8 결합이 가장 큰 레버리지
 
 폴더 구조(#4)와 차시 PDF 세트화(#8)의 결합이 가장 큰 레버리지를 만든다. 한 학기 강의를 "지침 MD + 차시별 세트메뉴(지도안·pptx·학습지)"로 표준화하면, AI 융합 큐레이터로서의 작업 흐름이 동료 교수와 연수 수강자에게도 그대로 전수 가능한 교수 자산이 된다.
@@ -78,3 +83,4 @@ sources:
 - [[easy-vibe-2026-05-20|datawhalechina/easy-vibe 평가 2026-05-20]]
 - [[Recommended Prompt Library|분야별 추천 프롬프트 라이브러리]]
 - [[LLM Usage Economics|LLM 사용 경제학]]
+- [[perplexity-business-validation-2026-05-28|Perplexity Deep Research 사업 아이디어 검증 메모 2026-05-28]]
